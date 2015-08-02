@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smile"
+        android:src="@drawable/pic1"
+        android:layout_alignParentLeft="true"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="100"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignRight="@+id/smile"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/smile"
+        android:layout_toEndOf="@+id/smile"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smile" />
+
+</RelativeLayout>
+
